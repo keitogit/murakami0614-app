@@ -1,0 +1,29 @@
+<div class="wrapper">
+  <%= render "header" %>
+
+  <body>
+    <% if @items.blank? then %>
+    <li class='list'>
+      <%= link_to '#' do %>
+      <%= image_tag "SAMPLE.png", class: "item-img" %>
+      <div class='item-info'>
+        <h3 class='item-name'>
+          SAMPLE
+        </h3>
+        <div class='item-price'>
+          <span>10,000<br>(税込み)</span>
+          <div class='star-btn'>
+            <%= image_tag "star.png", class:"star-icon" %>
+            <span class='star-count'>0</span>
+          </div>
+        </div>
+      </div>
+      <% end %>
+     </li>
+    <% end %>
+    </ul>
+  </body>
+  <%# /商品一覧 %>
+
+  <%= render "footer" %>
+</div>
