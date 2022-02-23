@@ -16,12 +16,13 @@ body {
 }
 
 header {
+  position: fixed; /*ヘッダーの固定*/
+  z-index: 10; /*レイヤーの重なり順を指定*/
   height: 70px;
   width:100%;
   box-sizing: border-box;
   min-height: 40vw;
   padding: 30vw 0 5vw;
-  position: fixed;
   -webkit-transform-style: inherit;
   transform-style: inherit;
 }
@@ -102,6 +103,7 @@ main {
   cursor: pointer;
   background-color: #2b2a2a;
   padding: 8px;
+  opacity: 0.5;
 }
 
 .search-icon {
