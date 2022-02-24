@@ -61,3 +61,15 @@ belongs_to :orders
 - belongs_to :product
 - belongs_to :user
 - has_one :payments
+
+
+## reviews
+
+| Column      | Type       | Options                         |
+| ----------- | ---------- | ------------------------------- |
+| item        | references | null: false , foreign_key: true |
+| comment     | text       | null: false                     |
+
+### Association
+- belongs_to :product
+- belongs_to :user

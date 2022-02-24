@@ -1,0 +1,19 @@
+<%= render "header" %>
+<div class="wrapper">
+<body>
+  <ul class="top-banner">
+    <li class='list'>
+      <%= link_to '#' do %>
+      <%= image_tag "SAMPLE.png", class: "item-img" %>
+      <div class='item-info'>
+        <h1 class='item-name'>
+          <%= link_to 'SAMPLE_1', item_path(user.id), method: :get %>
+        </h1>
+        <div class='item-price'>
+          <span>10,000円<br>(tax inc.)</span>
+        </div>
+      </div>
+      <% end %>
+    </li>
+  </ul>
+</body

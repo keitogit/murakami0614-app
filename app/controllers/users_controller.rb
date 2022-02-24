@@ -5,6 +5,10 @@ class UsersController < ApplicationController
     @users = User.includes(:user).order('created_at DESC')
   end
 
+  def show
+    @users = User.find(params[:id])
+  end
+
   private
   def user_params
     params.require(:user).permit(:name, :image, :text).merge(user_id: current_user.id)
